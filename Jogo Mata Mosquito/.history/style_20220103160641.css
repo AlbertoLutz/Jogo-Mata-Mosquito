@@ -1,0 +1,26 @@
+body {
+    background-image: url(imagens/bg.jpg);
+}
+
+.mosquito01 {
+    width: 50px;
+    height: 50px;
+}
+
+.mosquito02 {
+    width: 70px;
+    height: 70px;
+}
+
+.mosquito03 {
+    width: 90px;
+    height: 90px;
+}
+
+.ladoA {
+    transform: scaleX(1);
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}

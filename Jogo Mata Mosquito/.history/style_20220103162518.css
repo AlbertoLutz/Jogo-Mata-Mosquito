@@ -1,7 +1,6 @@
 body {
     background-image: url('imagens/bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .mosquito01 {
@@ -27,9 +26,8 @@ body {
     transform: scaleX(-1);
 }
 
-.painel {
+.paniel {
     position: absolute;
-    left: 0;
     width: 190px;
     padding: 10px;
     bottom: 0;
