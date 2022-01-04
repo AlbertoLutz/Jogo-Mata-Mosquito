@@ -1,0 +1,19 @@
+body {
+    background-image: url('imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.col {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    width: 20rem;
+    height: 5rem;
+}

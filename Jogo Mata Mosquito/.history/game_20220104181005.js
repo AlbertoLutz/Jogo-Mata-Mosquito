@@ -12,7 +12,6 @@ ajustaTamanhoPalcoJogo();
 
 let cronometro = setInterval(() => {
   tempo -= 1;
-  document.getElementById("cronometro").innerHTML = tempo;
 }, 1000);
 
 function posicaoRandomica() {
