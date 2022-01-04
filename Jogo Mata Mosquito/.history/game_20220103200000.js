@@ -1,20 +1,24 @@
-let altura = 0;
-let largura = 0;
-let vidas = 1;
+var altura = 0;
+var largura = 0;
+var vidas = 1;
 
 function ajustaTamanhoPalcoJogo() {
   altura = window.innerHeight;
   largura = window.innerWidth;
+
+  console.log(largura, altura);
 }
 
 ajustaTamanhoPalcoJogo();
 
 function posicaoRandomica() {
+  //remover o mosquito anterior (caso exista)
   if (document.getElementById("mosquito")) {
     document.getElementById("mosquito").remove();
 
+    //console.log('elemento selecionado foi: v' + vidas)
     if (vidas > 3) {
-      alert("Game over!");
+      alert("Interromper o jogo (game over)");
     } else {
       document.getElementById("v" + vidas).src = "imagens/coracao_vazio.png";
 
@@ -22,14 +26,17 @@ function posicaoRandomica() {
     }
   }
 
-  let posicaoX = Math.floor(Math.random() * largura) - 90;
-  let posicaoY = Math.floor(Math.random() * altura) - 90;
+  var posicaoX = Math.floor(Math.random() * largura) - 90;
+  var posicaoY = Math.floor(Math.random() * altura) - 90;
 
   posicaoX = posicaoX < 0 ? 0 : posicaoX;
   posicaoY = posicaoY < 0 ? 0 : posicaoY;
 
+  console.log(posicaoX, posicaoY);
+
+  //criar o elemento html
   var mosquito = document.createElement("img");
-  mosquito.src = "imagens/mosca.png";
+  mosquito.src = "imagens/mosquito.png";
   mosquito.className = tamanhoAleatorio() + " " + ladoAleatorio();
   mosquito.style.left = posicaoX + "px";
   mosquito.style.top = posicaoY + "px";
@@ -43,22 +50,22 @@ function posicaoRandomica() {
 }
 
 function tamanhoAleatorio() {
-  let classe = Math.floor(Math.random() * 3);
+  var classe = Math.floor(Math.random() * 3);
 
   switch (classe) {
     case 0:
-      return "mosquito01";
+      return "mosquito1";
 
     case 1:
-      return "mosquito02";
+      return "mosquito2";
 
     case 2:
-      return "mosquito03";
+      return "mosquito3";
   }
 }
 
 function ladoAleatorio() {
-  let classe = Math.floor(Math.random() * 2);
+  var classe = Math.floor(Math.random() * 2);
 
   switch (classe) {
     case 0:

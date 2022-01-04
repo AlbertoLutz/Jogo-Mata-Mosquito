@@ -2,7 +2,6 @@ body {
     background-image: url('imagens/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: url('imagens/mata_mosca.png') 2 2, auto;
 }
 
 .mosquito01 {
@@ -29,7 +28,7 @@ body {
 }
 
 .painel {
-    position: absolute;
+
     left: 0;
     width: 190px;
     padding: 10px;

@@ -13,13 +13,9 @@ function posicaoRandomica() {
   if (document.getElementById("mosquito")) {
     document.getElementById("mosquito").remove();
 
-    if (vidas > 3) {
-      alert("Game over!");
-    } else {
-      document.getElementById("v" + vidas).src = "imagens/coracao_vazio.png";
+    document.getElementById("v" + vidas).src = "imagens/coracao_vazio.png";
 
-      vidas++;
-    }
+    vidas++;
   }
 
   let posicaoX = Math.floor(Math.random() * largura) - 90;
