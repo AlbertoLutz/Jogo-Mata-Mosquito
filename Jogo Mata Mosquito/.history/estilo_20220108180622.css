@@ -6,28 +6,13 @@ body {
 }
 
 .container {
-    margin-top: 5rem;
     height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .container select {
-    width: 13rem;
-    height: 3rem;
-    padding: 5px;
-    font-family: Montserrat;
-    font-weight: bold;
-    margin: 2rem;
-    font-size: 1rem;
-    border-radius: 10px;
-}
-
-.container select option {
-    color: rgb(223, 75, 223);
+    width: 5rem;
 }
 
 .col {

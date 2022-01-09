@@ -23,11 +23,8 @@ body {
     font-weight: bold;
     margin: 2rem;
     font-size: 1rem;
-    border-radius: 10px;
-}
 
-.container select option {
-    color: rgb(223, 75, 223);
+    border-radius: 10px;
 }
 
 .col {

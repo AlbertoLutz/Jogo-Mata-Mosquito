@@ -27,6 +27,7 @@ body {
 }
 
 .container select option {
+    margin: 0 auto;
     color: rgb(223, 75, 223);
 }
 

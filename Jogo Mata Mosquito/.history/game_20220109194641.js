@@ -6,14 +6,14 @@ let tempo = 10;
 var criaMosquitoTempo = 1500;
 
 var nivel = window.location.search;
-nivel = nivel.replace("?", "");
+nivel = nivel.replace("?", "").replace;
 
 if (nivel === "facil") {
   criaMosquitoTempo = 1500;
 } else if (nivel === "medio") {
   criaMosquitoTempo = 1000;
 } else if (nivel === "dificil") {
-  criaMosquitoTempo = 750;
+  criaMosquitoTempo = 100;
 }
 
 function ajustaTamanhoPalcoJogo() {

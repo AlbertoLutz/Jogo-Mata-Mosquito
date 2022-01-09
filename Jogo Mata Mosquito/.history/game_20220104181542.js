@@ -3,19 +3,6 @@ let largura = 0;
 let vidas = 1;
 let tempo = 10;
 
-var criaMosquitoTempo = 1500;
-
-var nivel = window.location.search;
-nivel = nivel.replace("?", "");
-
-if (nivel === "facil") {
-  criaMosquitoTempo = 1500;
-} else if (nivel === "medio") {
-  criaMosquitoTempo = 1000;
-} else if (nivel === "dificil") {
-  criaMosquitoTempo = 750;
-}
-
 function ajustaTamanhoPalcoJogo() {
   altura = window.innerHeight;
   largura = window.innerWidth;
@@ -26,9 +13,7 @@ ajustaTamanhoPalcoJogo();
 let cronometro = setInterval(() => {
   tempo -= 1;
   if (tempo < 0) {
-    clearInterval(cronometro);
-    clearInterval(criaMosca);
-    window.location.href = "vitoria.html";
+    alert("Vitória");
   } else {
     document.getElementById("cronometro").innerHTML = tempo;
   }

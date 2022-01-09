@@ -13,7 +13,7 @@ if (nivel === "facil") {
 } else if (nivel === "medio") {
   criaMosquitoTempo = 1000;
 } else if (nivel === "dificil") {
-  criaMosquitoTempo = 750;
+  criaMosquitoTempo = 100;
 }
 
 function ajustaTamanhoPalcoJogo() {

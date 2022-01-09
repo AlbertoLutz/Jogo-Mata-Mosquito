@@ -6,28 +6,18 @@ body {
 }
 
 .container {
-    margin-top: 5rem;
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .container select {
-    width: 13rem;
-    height: 3rem;
-    padding: 5px;
+    width: 10rem;
     font-family: Montserrat;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 2rem;
-    font-size: 1rem;
-    border-radius: 10px;
-}
-
-.container select option {
-    color: rgb(223, 75, 223);
 }
 
 .col {

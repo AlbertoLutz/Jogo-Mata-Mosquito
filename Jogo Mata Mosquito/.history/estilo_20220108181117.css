@@ -26,10 +26,6 @@ body {
     border-radius: 10px;
 }
 
-.container select option {
-    color: rgb(223, 75, 223);
-}
-
 .col {
     display: flex;
     align-items: center;

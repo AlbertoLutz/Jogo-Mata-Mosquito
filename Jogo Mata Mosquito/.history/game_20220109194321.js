@@ -6,13 +6,13 @@ let tempo = 10;
 var criaMosquitoTempo = 1500;
 
 var nivel = window.location.search;
-nivel = nivel.replace("?", "");
+nivel = nivel.replace("?", "").replace;
 
 if (nivel === "facil") {
   criaMosquitoTempo = 1500;
-} else if (nivel === "medio") {
+} else if (nivel === "médio") {
   criaMosquitoTempo = 1000;
-} else if (nivel === "dificil") {
+} else if (nivel === "difícil") {
   criaMosquitoTempo = 750;
 }
 
